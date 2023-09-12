@@ -89,9 +89,10 @@ h6 {
   padding-block: 8px;
   font-size: 16px;
   font-weight: 600;
-  line-height: 22px;
+  line-height: 40px;
   border-radius: 12px;
   text-transform: capitalize;
+  letter-spacing: 1px !important;
 }
 
 .btn-block {
@@ -100,7 +101,7 @@ h6 {
 
 .btn-lg {
   padding-inline: 42px;
-  padding-block: 20px;
+  padding-block: 18px;
   font-weight: 800;
   text-transform: capitalize;
 }
