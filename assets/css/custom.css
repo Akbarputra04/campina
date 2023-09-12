@@ -100,7 +100,7 @@ h6 {
 
 .btn-lg {
   padding-inline: 42px;
-  padding-block: 8px;
+  padding-block: 20px;
   font-weight: 800;
   text-transform: capitalize;
 }
@@ -1155,7 +1155,7 @@ nav.sidebar .nav-link:hover {
 
   .btn-lg {
     padding-inline: 81px;
-    padding-block: 12px;
+    padding-block: 20px;
     font-size: 20px;
   }
 
