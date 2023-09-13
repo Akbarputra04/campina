@@ -981,16 +981,16 @@ nav.sidebar .nav-link:hover {
 
 /* swiper */
 
-.swiper .single-product-02 .product-hover-image {
+.single-product-02 .product-hover-image {
   display: none;
 }
 
-.swiper .single-product-02:hover .product-images::before,
-.swiper .single-product-02:hover .product-hover-image {
+.single-product-02:hover .product-images::before,
+.single-product-02:hover .product-hover-image {
   display: block;
 }
 
-.swiper .single-product-02:hover img:not(.product-hover-image) {
+.single-product-02:hover img:not(.product-hover-image) {
   display: none;
 }
 
