@@ -292,7 +292,7 @@
       <div class="product-tabs">
         <div class="product-tabs-menu d-flex justify-content-center flex-wrap">
           <a href="javascript:;" class="active" data-type="all">All</a>
-          <a href="javascript:;" data-type="stick">
+          <a href="javascript:;" data-type="bites">
             <img src="assets/images/campina/bites.png" alt="bites" height="34" width="34">
             Bites
           </a>
@@ -322,8 +322,8 @@
           </a>
         </div>
         <div class="product-tabs-content row">
-          <div class="col-lg-4 single-product-02 text-center mb-5">
-            <div class="bulk product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="bulk col-lg-4 single-product-02 text-center mb-5">
+            <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
               <a href="product-detail.html">
                 <img src="assets/images/campina/neapolitan-box.png" alt="neapolitan box">
                 <img src="assets/images/campina/neapolitan-hover.png" class="product-hover-image" alt="product">
@@ -331,8 +331,8 @@
             </div>
             <h4 class="title"><a href="product-detail.html" class="text-black" style="font-size: 18px; font-weight: 900;">Neapolitan</a></h4>
           </div>
-          <div class="col-lg-4 single-product-02 text-center mb-5">
-            <div class="es-potong product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="es-potong col-lg-4 single-product-02 text-center mb-5">
+            <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
               <a href="product-detail.html">
                 <img src="assets/images/campina/mochi.png" alt="mochi">
                 <img src="assets/images/campina/mochi-hover.png" class="product-hover-image" alt="product">
@@ -340,8 +340,8 @@
             </div>
             <h4 class="title"><a href="product-detail.html" class="text-black" style="font-size: 18px; font-weight: 900;">Mochi</a></h4>
           </div>
-          <div class="col-lg-4 single-product-02 text-center mb-5">
-            <div class="stick product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="stick col-lg-4 single-product-02 text-center mb-5">
+            <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
               <a href="product-detail.html">
                 <img src="assets/images/campina/heart.png" alt="heart">
                 <img src="assets/images/campina/heart-hover.png" class="product-hover-image" alt="product">
@@ -349,8 +349,8 @@
             </div>
             <h4 class="title"><a href="product-detail.html" class="text-black" style="font-size: 18px; font-weight: 900;">Heart</a></h4>
           </div>
-          <div class="col-lg-4 single-product-02 text-center mb-5">
-            <div class="bulk product-bulk product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="bulk col-lg-4 single-product-02 text-center mb-5">
+            <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
               <a href="product-detail.html">
                 <img src="assets/images/campina/neapolitan-box.png" alt="neapolitan box">
                 <img src="assets/images/campina/neapolitan-hover.png" class="product-hover-image" alt="product">
@@ -358,8 +358,8 @@
             </div>
             <h4 class="title"><a href="product-detail.html" class="text-black" style="font-size: 18px; font-weight: 900;">Neapolitan</a></h4>
           </div>
-          <div class="col-lg-4 single-product-02 text-center mb-5">
-            <div class="es-potong product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="es-potong col-lg-4 single-product-02 text-center mb-5">
+            <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
               <a href="product-detail.html">
                 <img src="assets/images/campina/mochi.png" alt="mochi">
                 <img src="assets/images/campina/mochi-hover.png" class="product-hover-image" alt="product">
@@ -367,8 +367,8 @@
             </div>
             <h4 class="title"><a href="product-detail.html" class="text-black" style="font-size: 18px; font-weight: 900;">Mochi</a></h4>
           </div>
-          <div class="col-lg-4 single-product-02 text-center mb-5">
-            <div class="stick product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
+          <div class="stick col-lg-4 single-product-02 text-center mb-5">
+            <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
               <a href="product-detail.html">
                 <img src="assets/images/campina/heart.png" alt="heart">
                 <img src="assets/images/campina/heart-hover.png" class="product-hover-image" alt="product">
@@ -527,7 +527,7 @@
   <!-- swipper -->
   <script>
     const menus0 = document.querySelectorAll('.product-tabs-menu a')
-    const products0 = document.querySelectorAll('.product-tabs-content .product-tabs-content-item')
+    const products0 = document.querySelectorAll('.product-tabs-content .single-product-02')
 
     menus0.forEach(menu => {
       menu.addEventListener('click', e => {
