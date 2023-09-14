@@ -317,7 +317,13 @@
               <input id="ktp" type="file" class="form-control border p-3" style="border-radius: 10px;">
               <label class="text-black" style="font-size: 12px; font-style: italic;">File tidak lebih dari 1 (satu)mb</label>
             </div>
-            <button class="btn btn-lg btn-primary-light btn-block mt-5" style="font-weight: 600; font-size: 18px;">Kirim</button>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- <button class="btn btn-lg btn-primary-light btn-block mt-5" style="font-weight: 600; font-size: 18px;">Kirim</button> -->
           </form>
         </div>
       </div>
@@ -466,6 +472,10 @@
 
   <!-- custom -->
   <script src="assets/js/custom.js"></script>
+
+  <script>
+    $('.alert').alert()
+  </script>
 
 </body>
 
