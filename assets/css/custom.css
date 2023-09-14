@@ -1392,6 +1392,7 @@ nav.sidebar .nav-link:hover {
 
 .timeline .timeline-item {
   padding-bottom: 80px;
+  display: none;
 }
 
 .timeline .timeline-item:nth-child(1) {
