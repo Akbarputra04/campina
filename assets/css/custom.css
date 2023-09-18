@@ -608,6 +608,8 @@ nav.sidebar .nav-link:hover {
   box-shadow: 12px 12px 0px 0px var(--secondary-dark);
   overflow: hidden;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .store-highlight .store-highlight-image {
@@ -718,6 +720,19 @@ nav.sidebar .nav-link:hover {
   text-align: left;
 }
 
+.swiper-creator .swiper-slide .product-content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  transition: all .45s cubic-bezier(.215,.61,.355,1);
+}
+
+.swiper-creator .swiper-slide .product-content:hover {
+  box-shadow: 0 0 0 15px var(--secondary-dark) inset;
+  transition: all .45s cubic-bezier(.215,.61,.355,1);
+  padding: 15px;
+}
+
 /* ---------- RESELLER ---------- */
 
 .person-campina {
@@ -731,7 +746,7 @@ nav.sidebar .nav-link:hover {
   border-radius: 29px;
   background-color: var(--white);
   box-shadow: 12px 12px 0px 0px var(--secondary-dark);
-  z-index: 0;
+  z-index: 1;
 }
 
 .become-a-reseller .become-a-reseller-decoration {
@@ -1120,7 +1135,7 @@ nav.sidebar .nav-link:hover {
 }
 
 .parallax-scroll {
-  z-index: 2;
+  z-index: 0;
   width: 35%;
 }
 
@@ -1204,6 +1219,10 @@ nav.sidebar .nav-link:hover {
   .swiper-creator .product-content .title a.small {
     font-size: 38px !important;
     line-height: 54px;
+  }
+
+  .swiper-creator .swiper-slide .product-content {
+    height: 612px;
   }
 
   .become-a-reseller .become-a-reseller-decoration {
@@ -1302,6 +1321,7 @@ nav.sidebar .nav-link:hover {
   }
 
   .parallax-scroll {
+    z-index: 1;
     width: unset;
   }
 
