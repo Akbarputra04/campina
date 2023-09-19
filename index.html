@@ -841,7 +841,10 @@
         slidesPerView: 1,
         centeredSlides: true,
         loop: true,
-        autoplay: true,
+        autoplay: {
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true
+        },
         breakpoints: {
           640: {
             slidesPerView: 2,
@@ -855,6 +858,13 @@
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+    });
+    $(".swiper-creator").mouseenter(function() {
+      swiperCreator.autoplay.stop();
+    });
+
+    $(".swiper-creator").mouseleave(function() {
+      swiperCreator.autoplay.start();
     });
 
     gsap.to(".parallax-scroll", {

@@ -776,7 +776,10 @@
       slidesPerView: 1,
       centeredSlides: true,
       loop: true,
-      autoplay: true,
+      autoplay: {
+        disableOnInteraction: true,
+        pauseOnMouseEnter: true
+      },
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -791,6 +794,14 @@
           prevEl: '.swiper-button-prev',
       },
     });
+    $(".swiper-creator").mouseenter(function() {
+      swiperCreator.autoplay.stop();
+    });
+
+    $(".swiper-creator").mouseleave(function() {
+      swiperCreator.autoplay.start();
+    });
+    
     const swiperevent = new Swiper('.swiper-event', {
       slidesPerView: 1,
       loop: true,
