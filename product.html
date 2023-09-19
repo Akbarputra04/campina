@@ -290,37 +290,59 @@
   <div class="product-page-content">
     <div class="container">
       <div class="product-tabs">
-        <div class="product-tabs-menu d-flex justify-content-center flex-wrap">
-          <a href="javascript:;" class="active" data-type="all">All</a>
-          <a href="javascript:;" data-type="bites">
-            <img src="assets/images/campina/bites.png" alt="bites" height="34" width="34">
-            Bites
-          </a>
-          <a href="javascript:;" data-type="stick">
-            <img src="assets/images/campina/menu-stick.png" alt="menu stick" height="34" width="34">
-            Stick
-          </a>
-          <a href="javascript:;" data-type="cup">
-            <img src="assets/images/campina/menu-cup.png" alt="menu cup" height="34" width="34">
-            Cup
-          </a>
-          <a href="javascript:;" data-type="cone">
-            <img src="assets/images/campina/menu-cone.png" alt="menu cone" height="34" width="34">
-            Cone
-          </a>
-          <a href="javascript:;" data-type="family-pack">
-            <img src="assets/images/campina/menu-family-pack.png" alt="menu family pack" height="34" width="34">
-            Family Pack
-          </a>
-          <a href="javascript:;" data-type="es-potong">
-            <img src="assets/images/campina/menu-es-potong.png" alt="menu es potong" height="34" width="34">
-            Es Potong
-          </a>
-          <a href="javascript:;" data-type="bulk">
-            <img src="assets/images/campina/menu-bulk.png" alt="menu bulk" height="34" width="34">
-            Bulk
-          </a>
+        <div class="product-tabs-menu swiper position-relative overflow-hidden swiper-button-reveal">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="javascript:;" class="active" data-type="all">All</a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="bites">
+                <img src="assets/images/campina/bites.png" alt="bites" height="34" width="34">
+                Bites
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="stick">
+                <img src="assets/images/campina/menu-stick.png" alt="menu stick" height="34" width="34">
+                Stick
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="cup">
+                <img src="assets/images/campina/menu-cup.png" alt="menu cup" height="34" width="34">
+                Cup
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="cone">
+                <img src="assets/images/campina/menu-cone.png" alt="menu cone" height="34" width="34">
+                Cone
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="family-pack">
+                <img src="assets/images/campina/menu-family-pack.png" alt="menu family pack" height="34" width="34">
+                Family Pack
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="es-potong">
+                <img src="assets/images/campina/menu-es-potong.png" alt="menu es potong" height="34" width="34">
+                Es Potong
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="javascript:;" data-type="bulk">
+                <img src="assets/images/campina/menu-bulk.png" alt="menu bulk" height="34" width="34">
+                Bulk
+              </a>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev d-none d-lg-flex"></div>
+          <div class="swiper-button-next d-none d-lg-flex"></div>
         </div>
+        
         <div class="product-tabs-content row">
           <div class="bulk col-lg-4 single-product-02 text-center mb-5">
             <div class="product-images product-tabs-content-item position-relative mb-5 d-flex flex-column justify-content-center align-items-center">
@@ -548,6 +570,23 @@
         })
       })
     })
+
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 2,
+        centeredSlides: true,
+        initialSlide: 0,
+        spaceBetween: -100,
+        breakpoints: {
+          640: {
+            initialSlide: 3,
+            slidesPerView: 8,
+          }
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+    });
   </script>
 
 </body>

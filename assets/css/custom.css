@@ -348,17 +348,17 @@ nav.sidebar .nav-link:hover {
   color: var(--danger);
 }
 
-.accordion#faq .accordion-button {
+.accordion.faq .accordion-button {
   display: flex;
   align-items: flex-start;
 }
 
-.accordion#faq .accordion-button:not(.collapsed) {
+.accordion.faq .accordion-button:not(.collapsed) {
   color: var(--black);
   background-color: unset;
 }
 
-.accordion#faq .accordion-button::before {
+.accordion.faq .accordion-button::before {
   content: '-';
   display: block;
   margin-right: 29px;
@@ -367,7 +367,7 @@ nav.sidebar .nav-link:hover {
   color: var(--primary);
 }
 
-.accordion#faq .accordion-button.collapsed::before {
+.accordion.faq .accordion-button.collapsed::before {
   content: '+';
   display: block;
   margin-right: 26px;
@@ -376,7 +376,7 @@ nav.sidebar .nav-link:hover {
   color: var(--primary);
 }
 
-.accordion#faq .accordion-body {
+.accordion.faq .accordion-body {
   padding-left: 60px;
 }
 
@@ -1124,6 +1124,8 @@ nav.sidebar .nav-link:hover {
   bottom: 100px;
   right: 20px;
   z-index: 10;
+  transform: translateY(125px);
+  transition: all .5s ease-in-out;
 }
 
 .mitra-campina img {

@@ -359,8 +359,10 @@
     $(window).on('scroll', function (event) {
         if ($(this).scrollTop() > 600) {
             $('.back-to-top').fadeIn(200)
+            $('.mitra-campina').css('transform', 'translateY(0)')
         } else {
             $('.back-to-top').fadeOut(200)
+            $('.mitra-campina').css('transform', 'translateY(215px)')
         }
     });
 
