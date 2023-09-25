@@ -701,8 +701,21 @@ nav.sidebar .nav-link:hover {
   padding-block: 24px;
 }
 
-.swiper-creator .swiper-slide-prev,
-.swiper-creator .swiper-slide-next {
+.swiper-creator .swiper-slide-prev .product-content,
+.swiper-creator .swiper-slide-next .product-content {
+  position: relative;
+}
+
+.swiper-creator .swiper-slide-prev .product-content::after,
+.swiper-creator .swiper-slide-next .product-content::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--secondary);
   opacity: .4;
 }
 
@@ -737,6 +750,8 @@ nav.sidebar .nav-link:hover {
 
 .person-campina {
   margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
 }
 
 .become-a-reseller {
@@ -1323,7 +1338,6 @@ nav.sidebar .nav-link:hover {
   }
 
   .parallax-scroll {
-    z-index: 1;
     width: unset;
   }
 
