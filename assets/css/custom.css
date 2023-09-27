@@ -736,7 +736,7 @@ nav.sidebar .nav-link:hover {
 .swiper-creator .swiper-slide .product-content {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 480px;
   transition: all .45s cubic-bezier(.215,.61,.355,1);
 }
 
@@ -1234,12 +1234,12 @@ nav.sidebar .nav-link:hover {
 
   .swiper-creator .product-content .title a,
   .swiper-creator .product-content .title a.small {
-    font-size: 38px !important;
+    font-size: 32px !important;
     line-height: 54px;
   }
 
   .swiper-creator .swiper-slide .product-content {
-    height: 612px;
+    height: 480px;
   }
 
   .become-a-reseller .become-a-reseller-decoration {
