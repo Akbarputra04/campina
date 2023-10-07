@@ -319,6 +319,7 @@
                 <div class="mb-4">
                   <label for="kelamin" class="text-black form-label" style="font-weight: 500;">Gender*</label>
                   <select required id="kelamin" name="kelamin" class="form-select border p-3" style="border-radius: 10px;">
+                    <option value="">--- Choose Gender ---</option>
                     <option value="lakilaki">Laki-laki</option>
                     <option value="perempuan">Perempuan</option>
                   </select>
@@ -327,7 +328,11 @@
               <div class="col-lg-6">
                 <div class="mb-4">
                   <label for="lokasi" class="text-black form-label" style="font-weight: 500;">Location*</label>
-                  <select required id="lokasi" type="text" class="form-select border p-3" style="border-radius: 10px;"></select>
+                  <select required id="lokasi" name="lokasi" class="form-select border p-3" style="border-radius: 10px;">
+                    <option value="">--- Choose Location ---</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">Malaysia</option>
+                  </select>
                 </div>
               </div>
             </div>
