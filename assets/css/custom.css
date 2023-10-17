@@ -1156,6 +1156,31 @@ nav.sidebar .nav-link:hover {
   width: 35%;
 }
 
+.penghargaan-menu {
+  display: flex;
+  gap: 38px;
+  margin-bottom: 70px;
+}
+
+.penghargaan-menu a {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  padding-bottom: 11px;
+  border-bottom: 4px solid transparent;
+}
+
+.penghargaan-menu a.active,
+.penghargaan-menu a:hover {
+  font-weight: 700;
+  border-bottom: 4px solid var(--primary);
+}
+
+.product-tabs-content .single-product {
+  box-shadow: 0 0 6px rgba(0,0,0,.2);
+  border-radius: 8px;
+}
+
 @media (min-width: 992px) {
   .px-lg-unset {
     padding-inline: unset;
